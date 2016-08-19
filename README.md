@@ -7,8 +7,15 @@
 
 # DOCENTE
 
-- Docente: Eric Gustavo Coronel Castillo
+- Nombre: Eric Gustavo Coronel Castillo
 - Blog: gcoronelc.blogspot.com
+
+# TUTORA
+
+- Nombre: Susy Vilcapoma Inga
+- Teléfono: 995-371-189
+- Correo: svilcapoma@institutoemprendedores.edu.pe
+
 
 # RECURSOS RECOMENDADOS
 
