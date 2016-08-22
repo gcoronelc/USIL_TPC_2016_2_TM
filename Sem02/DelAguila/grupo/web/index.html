@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>GRUPO APOCALIPSIS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor=#808080 text=#00ff00 > 
+        <h1><p align="CENTER"><font color="purple"><MARQUEE WIDTH=50% HEIGHT=60>SUELDO DE TRABAJADOR</MARQUEE></font></p></h1>
+    
+    
+    <FORM method="post" action="PagoServlet">
+        
+        
+        <thead>
+        <p align="left"><font color="white"><th colspan="4">DATOS PERSONALES</th></font>
+
+        <TABLE border=2 cellspacing=0 cellpadding=2 bordercolor="blue">
+
+
+            <Th>Codigo: </th>
+            <td><input type="text" name="codigo"/></td>
+
+            <Th>Nombre: </th>
+            <td><input type="text" name="nombre"/></td>
+
+
+            <Th>Apellido: </th>
+            <td><input type="text" name="apellido"/></td>
+
+
+            <Th>DNI: </th>
+            <td><input type="text" name="dni"/></td>
+
+            </thead>
+        </TABLE>
+    </p>
+
+    <p align="left"><font size="5" color="red">* INFORMACION DE TRABAJO</font>
+    <TABLE>
+        <TR>
+            <TD><font size="4">Horas trabajadas: </font></td>
+            <td><input type="text" name="ht"/></td>
+        </TR>
+        <TR>
+            <TD><font size="4">Horas extras: </font></td>
+            <td><input type="text" name="he"/></td>
+        </TR>
+    </TABLE>
+
+</p>
+<p align="left"><font size="5" color="red">* DESCUENTOS</font>
+<TABLE>
+    <br />
+    <input name="cbiafp" value="x" type="checkbox" /><font size="4">AFP</font>
+    <br />
+    <input name="cbisegurovida" value="y" type="checkbox" checked="checked" /><font size="4">SEGURO VIDA</font>
+    <br />
+    <input name="cbicts" value="z" type="checkbox" /><font size="4">CTS</font>
+
+</TABLE>
+</p>		  
+<p align="left"><font size="5" color="red">* GRATIFICACIONES</font>
+<TABLE>
+    <br />
+    <input name="cbifiestaspatrias" value="a" type="checkbox" /><font size="4">Fiestas Patrias</font>
+    <br />
+    <input name="cbiescolaridad" value="b" type="checkbox" checked="checked" /><font size="4">Escolaridad</font>
+    <br />
+    <input name="cbinavidad" value="c" type="checkbox" /><font size="4">Navidad</font>
+
+</TABLE>
+
+<P align="center"><input  type= "submit" value="Procesar" style="width:100px;height:40px"/>
+</p>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            form {
+                margin:auto;
+                background: green;
+                color: whitesmoke;
+                font-size: 12px;
+                padding: 30px;
+                width: 350px;
+                border:solid 10px LightSteelBlue;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+            }
+
+            form fieldset {
+                border: none;
+            } 
+
+            form input{
+                font-size:12px;
+                background: yellow;
+                border:solid 1px Green;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                float: right;
+                margin-right: 15px;
+                width: 165px;
+            }
+
+            form ol li {
+                line-height: 25px;
+                list-style: none;
+            }
+
+            form [required]{
+                border:solid 1px red;
+            } 
+
+            input:required {
+                outline: 1px solid red;
+            }
+        </style>
+    </head> 
+    <body>
+        <form method ="post" action="SueldoServlet">
+            <fieldset>
+                <legend><b>DATOS DEL TRABAJADOR: </b></legend>
+                <ol>
+                    <li>
+                        <label for="nombre">Nombres: </label>
+                        <input  name="nombre" type="text" placeholder="Escribe tus nombres completos" required autofocus>
+                    </li>
+                    <li>
+                        <label for="nombre">Ape.Paterno: </label>
+                        <input  name="apellidoPaterno" type="text" placeholder="Escribe Apellido Paterno" required autofocus>
+                    </li>
+                    <li>
+                        <label for="nombre">Ape.Materno: </label>
+                        <input  name="apellidoMaterno" type="text" placeholder="Escribe Apellido Materno" required autofocus>
+                    </li>
+
+                    <li>
+                        <label for="email">Email: </label>
+                        <input  name="email" type="text" placeholder="Ej: jcaleb@ejemplo.com">
+                    </li>
+                    <li>
+                        <label for="telefono">Telefono: </label>
+                        <input  name="telefono" type="text" placeholder="Ej. +953449960">
+                    </li>
+                    <li>
+                        <label for="dni">DNI: </label>
+                        <input  name="Dni" type="text" placeholder="Ej. 70212655 " required>
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend><b> HABERES: </b></legend>
+                <ol>
+                    <li>
+                        <label for="ht">Horas Trabajadas: </label>
+                        <input  name="ht" type="text" placeholder="Escribe las horas trabajadas" required>
+                    </li>
+                    <li>
+                        <label for="pagoh">Pago por hora: </label>
+                        <input  name="pagoh" type="text" placeholder="Escribe el pago por hora" required>
+                    </li>
+                    <li>
+                        <label for="horaExtra">H.Extra: </label>
+                        <input  name="HoraExtra" type="text" placeholder="Ej. 10 " value= "0">
+                    </li>
+                    <li>
+                        <label for="grati">Gratificacion: </label>
+                        <input  name="grati" type="text" placeholder="Escribe el monto " value="0">
+                    </li> 
+
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend><b>BONOS: </b></legend>
+                <ol>
+                    <li>
+                        <label for="bonoRespo">B.Responsable: </label>
+                        <input  name="bonoRespo" type="text" placeholder="Escribe el monto"  value="0 ">
+                    </li>
+                    <li>
+                        <label for="bonoPro">B.Produccion: </label>
+                        <input  name="bonoPro" type="text" placeholder="Escribe el monto" value="0">
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend><b>DESCUENTOS: </b></legend>
+                <ol>
+                    <li>
+                        <label for="igv">IGV: </label>
+                        <input  type="text" value="18%" readonly>
+                    </li>
+                    <li>
+                        <label for="afp">AFP: </label>
+                        <input  type="text" value="10%" readonly>
+                    </li>
+                    <li>
+                        <label for="seguro">Seguro de Salud: </label>
+                        <input   type="text" value="3%" readonly>
+                    </li>
+                </ol>
+            </fieldset>
+            -----------------------------------------------------------------------------------------------------------------
+            <fieldset>             
+        </form>
+        <input type = "submit" value = "Calcular Sueldo">
+    </body>
+</html>
