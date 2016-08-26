@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCULADORA</title>
+    <meta charset="UTF-8">
+    <link href="css/egcc.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="egcc_page">
+      <img alt="" src="img/logo.png" />
+      <h1>CALCULADORA</h1>
+      <form method="post" action="CalculaServlet">
+        <fieldset>
+          <legend>Datos</legend>
+          <table>
+            <tr>
+              <td>Operador:</td>
+              <td>
+                <select name="opera">
+                  <option value="S">Suma</option>
+                  <option value="R">Resta</option>
+                  <option value="M">Multiplica</option>
+                  <option value="D">Divide</option>
+                  <option value="R">Resto</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Número 1:</td>
+              <td><input type="text" name="num1"/></td>
+            </tr>
+            <tr>
+              <td>Número 2:</td>
+              <td><input type="text" name="num2"/></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" value="Procesar" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+          
+      </form>
+    </div>
+  </body>
+</html>
