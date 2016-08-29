@@ -1,0 +1,17 @@
+body{
+  background-color: #084B8A;
+  color: white;
+}
+
+.egcc_page{
+  background-color: white;
+  color: #0B2F3A;
+  width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+h1{
+  color: #0B3B39;
+  border-bottom: 2px solid #0B3B39;
+}
