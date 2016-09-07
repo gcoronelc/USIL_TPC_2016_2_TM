@@ -30,4 +30,9 @@ public class PruebaService {
     model.setNum1(1000);
     model.setNum2(2000);
   }
+  
+  public void showMensaje(String mensaje){
+    System.out.println("Mensaje: " + mensaje);
+    mensaje = "Es un Gustavo.";
+  }
 }
