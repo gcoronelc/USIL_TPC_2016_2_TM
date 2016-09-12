@@ -62,6 +62,4 @@ public class MateModel {
     this.rpta = rpta;
   }
   
-  
-  
 }
