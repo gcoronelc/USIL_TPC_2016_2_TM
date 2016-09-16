@@ -31,9 +31,7 @@ public class Prueba04 {
     
     
     Clase02 x = new Clase03();
-    
-    x.
-    
+        
   }
   
   
