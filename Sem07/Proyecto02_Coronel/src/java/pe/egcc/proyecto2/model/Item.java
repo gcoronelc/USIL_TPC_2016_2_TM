@@ -76,7 +76,8 @@ public class Item {
 
   @Override
   public String toString() {
-    String texto = tramo + " | " + intervalo +
+    String texto = tramo + " | " + descripcion +
+            " | " + intervalo +
             " | " + precio + " | " + consumo +
             " | " + importe;
     return texto;
