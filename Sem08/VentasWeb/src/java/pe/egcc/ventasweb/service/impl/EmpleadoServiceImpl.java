@@ -1,4 +1,4 @@
-package pe.egcc.ventasweb.service.impl;
+ package pe.egcc.ventasweb.service.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

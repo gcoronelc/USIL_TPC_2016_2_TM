@@ -2,22 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/model/Categoria.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/prueba/Prueba03.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/espec/CrudServiceEspec.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/model/Producto.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/espec/RowMapper.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/impl/CategoriaServiceImpl.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/impl/EmpleadoServiceImpl.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/impl/ProductoServiceImpl.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/model/Empleado.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/prueba/Prueba04.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/espec/ProductoServiceEspec.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/espec/CategoriaServiceEspec.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/espec/EmpleadoServiceEspec.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/service/mapper/EmpleadoMapper.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem08/VentasWeb/src/java/pe/egcc/ventasweb/prueba/Prueba02.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
