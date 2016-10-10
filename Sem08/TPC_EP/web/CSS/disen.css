@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+body{
+    text-align: center;
+    background-color: aqua;
+}
+.ta{
+    font-size: 20px;
+    position: absolute;
+    top: 160px;
+    left: 620px;
+}

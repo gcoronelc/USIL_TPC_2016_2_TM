@@ -1,0 +1,75 @@
+body{
+  background-color: gray;
+  color: blue;
+  font-family: Calibri;
+  font-size: 16px;
+}
+
+h1{
+  color: blue;
+  border-bottom: red thin solid;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tarea2_error{
+  width: 560px;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #F6D8CE;
+  color: #424242;
+}
+
+
+.page{
+  width: 750px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: gray;
+  color: black;
+}
+
+
+.cabecera{
+  width: 650px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: white;
+  color: #424242;
+}
+
+.menu{
+  width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: yellowgreen;
+  color: beige;
+  font-size: 18px;
+}
+
+.contenido{
+  width: 650px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+}
+
+.pie{
+  width: 650px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: bisque;
+  color: red;
+  font-size: 18px;
+}
+.tabla_row1{
+  background-color: orange;
+  color: white;
+}
+
+
+
+
+
