@@ -16,17 +16,25 @@
         <jsp:include page="menu/menu.jsp" />
       </section>
       <section class="egcc_content">
-        <h1>DATOS DEL CURSO</h1>
-        Nombre: Concurente<br/>
-        Profesor: Yo<br/>
-        Horario: <br/>
-        Cilco: <br/>
-        Periodo:
-        <h1>INTEGRANTE</h1>
-        - José<br/>
-        - Psdro<br/>
-        - Alicia<br/>
-        - Marco<br/>
+        <h1>MANTENIMIENTO DE EMPLEADOS</h1>
+        <form method="post" action="EmpleadoConsulta">
+          <table>
+            <tr>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="nombre"/></td>
+              <td><input type="text" name="apellido"/></td>
+              <td>
+                <input type="submit" value="Consultar" name="btnConsultar"/>
+                <input type="submit" value="Nuevo" name="btnNuevo"/>
+              </td>
+            </tr>
+          </table>
+        </form>
+
       </section>
       <footer class="egcc_pie">
         <jsp:include page="pie.jsp" />

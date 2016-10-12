@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="menu/menu.css" rel="stylesheet" type="text/css"/>
     <title>.:: VENTAS ::.</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <jsp:include page="header.jsp" />
       </header>
       <section class="egcc_menu">
-        <!-- jsp:include page="menu.jsp" /-->
+        <jsp:include page="menu/menu.jsp" />
       </section>
       <section class="egcc_content">
         <h1>DATOS DEL CURSO</h1>

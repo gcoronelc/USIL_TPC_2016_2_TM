@@ -53,8 +53,11 @@ public class LogonController extends HttpServlet {
     UtilController.forward(request, response, destino);
   } // Fin de LogonIngresar
 
-  private void LogonSalir(HttpServletRequest request, HttpServletResponse response) {
-    
+  private void LogonSalir(HttpServletRequest request, 
+          HttpServletResponse response) 
+          throws ServletException, IOException {
+    request.getSession().invalidate();
+    UtilController.forward(request, response, "index.jsp");
   } // Fin de LogonSalir
 
   
