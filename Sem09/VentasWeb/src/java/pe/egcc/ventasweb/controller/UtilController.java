@@ -17,6 +17,11 @@ public final class UtilController {
 
   private UtilController() {
   }
+  
+  // Constantes del CRUD
+  public static final String CRUD_NUEVO = "NUEVO";
+  public static final String CRUD_EDITAR = "EDITAR";
+  public static final String CRUD_ELIMINAR = "ELIMINAR";
 
   public static void forward(HttpServletRequest request, 
           HttpServletResponse response, String target) 

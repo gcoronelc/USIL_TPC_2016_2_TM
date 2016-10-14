@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/mantEmpleados.jsp</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/src/java/pe/egcc/ventasweb/db/AccesoDB.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/css/estilos.css</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/src/java/pe/egcc/ventasweb/controller/LogonController.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/main.jsp</file>
             <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/src/java/pe/egcc/ventasweb/service/impl/EmpleadoServiceImpl.java</file>
+            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/css/tabla.css</file>
+            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/mantEmpleados.jsp</file>
+            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/src/java/pe/egcc/ventasweb/controller/UtilController.java</file>
             <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/src/java/pe/egcc/ventasweb/controller/EmpleadoController.java</file>
-            <file>file:/D:/EGCC/USIL_TPC_2016_2_TM/Sem09/VentasWeb/web/menu/menu.jsp</file>
         </group>
     </open-files>
 </project-private>
