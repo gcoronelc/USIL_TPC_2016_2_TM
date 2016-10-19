@@ -143,4 +143,73 @@ public class ClienteService {
     }
   }
 
+  public void nuevo(Cliente bean) {
+      Connection cn = null;
+    try {
+      // Obtener objeto Connection
+      cn = AccesoDB.getConnection();
+      // Inicio de Tx
+      cn.setAutoCommit(false);
+      // Actualizar el contador
+      String sql = "update contador "
+              + "set int_contitem = int_contitem + 1 "
+              + "where vch_conttabla = 'Cliente'";
+      PreparedStatement pstm = cn.prepareStatement(sql);
+      int filas = pstm.executeUpdate();
+      pstm.close();
+      if(filas == 0){
+        throw new Exception("Contador no existe.");
+      }
+      // Leer contador
+      sql = "select int_contitem, int_contlongitud "
+              + "from contador "
+              + "where vch_conttabla = 'Cliente'";
+      pstm = cn.prepareStatement(sql);
+      ResultSet rs = pstm.executeQuery();
+      if(!rs.next()){
+        throw new RuntimeException("No existe contador.");
+      }
+      int cont = rs.getInt("int_contitem");
+      int longitud = rs.getInt("int_contlongitud");
+      // Generar el codigo
+      String codigo = "000000000" + cont;
+      codigo = codigo.substring(codigo.length() - longitud, codigo.length());
+      System.out.println("Codigo: " + codigo);
+      // Insertar cliente
+      sql = "insert into cliente(chr_cliecodigo,"
+              + "vch_cliepaterno,vch_cliematerno,"
+              + "vch_clienombre,chr_cliedni,"
+              + "vch_clieciudad,vch_cliedireccion,"
+              + "vch_clietelefono,vch_clieemail) "
+              + "values(?,?,?,?,?,?,?,?,?)";
+      pstm = cn.prepareStatement(sql);
+      pstm.setString(1, codigo);
+      pstm.setString(2, bean.getPaterno());
+      pstm.setString(3, bean.getMaterno());
+      pstm.setString(4, bean.getNombre());
+      pstm.setString(5, bean.getDni());
+      pstm.setString(6, bean.getCiudad());
+      pstm.setString(7, bean.getDireccion());
+      pstm.setString(8, bean.getTelefono());
+      pstm.setString(9, bean.getEmail());
+      pstm.executeUpdate();
+      bean.setCodigo(codigo);
+      // Confirmar Tx
+      cn.commit();
+    } catch (Exception e) {
+      try {
+        cn.rollback();
+      } catch (Exception e1) {
+      }
+      String texto = "Error en el proceso crear empleado. ";
+      texto += e.getMessage();
+      throw new RuntimeException(texto);
+    } finally{
+      try {
+        cn.close();
+      } catch (Exception e) {
+      }
+    }
+  }
+
 }

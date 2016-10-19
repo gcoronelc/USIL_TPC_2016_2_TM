@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import pe.egcc.app.model.Cliente;
 import pe.egcc.app.service.ClienteService;
 
-@WebServlet({"/Consulta","/Editar","/Eliminar","/GrabarModificar"})
+@WebServlet({"/Consulta","/Editar","/Eliminar",
+  "/GrabarModificar","/GrabarNuevo"})
 public class ClienteController extends HttpServlet{
 
   @Override
@@ -22,7 +23,7 @@ public class ClienteController extends HttpServlet{
         if(request.getParameter("btnConsulta") != null){
           consulta(request,response);
         } else if(request.getParameter("btnNuevo") != null){
-          //nuevo(request,response);
+          nuevo(request,response);
         }
         break;
       case "/Editar":
@@ -33,6 +34,9 @@ public class ClienteController extends HttpServlet{
         break;
       case "/GrabarModificar":
         grabarModificar(request,response);
+        break;
+      case "/GrabarNuevo":
+        grabarNuevo(request,response);
         break;
     }
   } // Fin de service
@@ -109,5 +113,41 @@ public class ClienteController extends HttpServlet{
     // Forward
     forward(request, response, destino);
   } // Fin de grabarModificar
+
+  private void nuevo(HttpServletRequest request, 
+          HttpServletResponse response) 
+          throws ServletException, IOException {
+    forward(request, response, "nuevo.jsp");
+  }
+
+  private void grabarNuevo(HttpServletRequest request, 
+          HttpServletResponse response) 
+          throws ServletException, IOException {
+    String destino;
+    Cliente bean = new Cliente();
+    try {
+      // Datos
+      bean.setPaterno(request.getParameter("paterno"));
+      bean.setMaterno(request.getParameter("materno"));
+      bean.setNombre(request.getParameter("nombre"));
+      bean.setDni(request.getParameter("dni"));
+      bean.setCiudad(request.getParameter("ciudad"));
+      bean.setDireccion(request.getParameter("direccion"));
+      bean.setTelefono(request.getParameter("telefono"));
+      bean.setEmail(request.getParameter("email"));
+      // Proceso
+      ClienteService service = new ClienteService();
+      service.nuevo(bean);
+      destino = "index.jsp";
+      request.setAttribute("mensaje", 
+        "Proceso ok. Codigo: " + bean.getCodigo() + ".");
+    } catch (Exception e) {
+      request.setAttribute("error", e.getMessage());
+      request.setAttribute("bean", bean);
+      destino = "nuevo.jsp";
+    }
+    // Forward
+    forward(request, response, destino);
+  }
   
 } // Fin de ClienteController
