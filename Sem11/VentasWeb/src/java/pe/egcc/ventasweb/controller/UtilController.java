@@ -1,11 +1,14 @@
 package pe.egcc.ventasweb.controller;
 
+import com.google.gson.Gson;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import pe.egcc.ventasweb.model.JsonBean;
 
 /**
  *
@@ -29,6 +32,18 @@ public final class UtilController {
     RequestDispatcher rd;
     rd = request.getRequestDispatcher(target);
     rd.forward(request, response);
+  }
+  
+  public static void responseJson(
+          HttpServletResponse response,
+          JsonBean jsonBean) throws IOException{
+    //response.setContentType("text/plain");
+    response.setContentType("application/json");
+    ServletOutputStream out = response.getOutputStream();
+    Gson gson = new Gson();
+    out.println(gson.toJson(jsonBean));
+    out.close();
+    out.flush();
   }
   
   /**
