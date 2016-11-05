@@ -4,7 +4,7 @@
     
     <li><a href="#" >Home</a></li>
 
-    <li><a href="#">Procesos</a>
+    <li><a href="#">Ventas</a>
       <ul>
         <li><a href="#">Drop Down CSS Menus</a></li>
         <li><a href="#">Horizontal CSS Menus</a></li>
@@ -13,12 +13,13 @@
        </ul>
     </li>
     
-    <li><a href="#">Tablas</a>
+    <li><a href="#">Mantenimiento</a>
       <ul>
         <li><a href="mantEmpleados.jsp">Empleados</a></li>
-        <li><a href="#">Horizontal CSS Menus</a></li>
-        <li><a href="#">Vertical CSS Menus</a></li>
-        <li><a href="#">Dreamweaver Menus</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="promociones.jsp">Promociones</a></li>
+        <li><a href="#">Campañas</a></li>
       </ul>
     </li>
 
@@ -40,7 +41,7 @@
       </ul>
     </li>
     
-    <li><a href="#">Util</a>
+    <li><a href="#">Seguridad</a>
       <ul>
         <li><a href="#">Drop Down CSS Menus</a></li>
         <li><a href="#">Horizontal CSS Menus</a></li>
